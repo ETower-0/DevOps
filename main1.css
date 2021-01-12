@@ -1,0 +1,255 @@
+
+
+body {
+	font-family: Calibri Light;
+    background-image: url("Internet.jpg");   	
+	color: #000000;   
+}
+
+.logo {
+	font-family: "Calibri", sans-serif;
+  font-weight: lighter;
+  font-weight: lighter;
+	color: #000000;
+	position:absolute;top:40px;left:80px;
+    font-size: 	4.0em;
+}
+
+.logo span {
+	font-size: 	0.5em;
+	
+	color: #0f778a;
+    
+}
+/* ESTILOS GENERALES */
+nav ul {
+	
+	font-size: 18px;
+	padding:1;/*Párrafo con sangria*/
+	
+}
+/*Propiedades li*/
+nav li {
+	
+	position:center;top:1px;left:400px;
+	line-height: 4rem;/*Altura de cada item*/
+	
+	position: relative;/*posiciona el elemento por defecto*/
+}
+/*propiedades ul del menu*/
+.menu ul {
+	
+	position: absolute;/*Referencia ventana navegador*/
+}
+/*propiedades para hipervinculos a*/
+nav a {
+	
+	color: #000000;
+	display:block;
+	padding: 0 2.1em;
+	text-decoration: none;
+	transition: .4s;
+}
+/*Navegabilidad de las opciones efectos items menú*/
+nav a:hover {
+	
+	background:#F3E2A9;
+}
+
+/*PRIMER NIVEL*/
+
+.menu {
+	margin-bottom: 1px;
+	margin-top: 10px;
+	background: white;
+	display: table;
+	width: 100%;/*Ancho*/
+}
+
+
+
+.menu > li {
+	
+	position:center;top:1px; left:1050px;
+}
+
+/*SEGUNDO NIVEL*/
+nav li li {
+	font-size: 16px;
+	position:center;top:1px;left:50px;
+	font-family: Calibri light;
+	background: white;
+	max-height: 0;/*ancho*/
+	overflow: hidden;;/*Oculto*/
+	transition: all .6s;/*tiempo de despliegue*/
+	width:  200px;/*ancho*/
+}
+
+nav li:hover > ul > li {
+	font-family: Comic;
+	max-height: 1000px;/*ALtura de los submenu*/
+	overflow: visible;/*visible que se despliegue*/
+}
+
+.menu > li > ul {
+	top:100%;
+}
+
+/*TERCER NIVEL */
+
+.menu ul ul {
+	left: 100%;
+	top:0;
+}
+
+.texto{
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+	margin:10px;
+	display: inline-block;
+	background: blue;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+
+/*h2{
+	font-weight: normal;
+	position:relative;top:400px;left:1px;
+	border: 1px solid brown;	
+	font-family: Comic;
+    
+    color: #000;
+    line-height: 1.5;	
+	text-align:center;
+	font-size: 100%;
+	padding: 10px;
+	border-radius: 30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px;
+	-webkit-border-radius: 30px 30px 30px 30px; 
+	border: 2px solid #e3bb7f;
+	box-shadow: 0 0 20px 0 rgba(255, 255, 255, .6);
+}*/
+
+
+.tablita {
+	
+	
+	background: url("fondo3.jpg");
+	font-family: Calibri light;
+ 
+    margin-bottom: 20px;
+    color: #000;
+    line-height: 1.5;	
+	text-align:center;
+	font-size: 40px;	
+	border-radius: 30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px;
+	-webkit-border-radius: 30px 30px 30px 30px; 
+	
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, .9);
+}
+
+input,textarea,output {
+	font-family: Comic Sans MS ;
+    border: BROWN;
+    background: rgba(0,0, 0, .6);
+	font-size: 	0.9em;
+    color: WHITE;
+    border-bottom: 1px solid #FFCCFF;
+}
+select{
+	 background: rgba(0,0, 0, .3);
+}
+button{
+	  background: rgba(255,255, 255, .3);
+	  color:brown;
+	   font-size:15px;
+}
+
+ button:hover,
+ button:focus {	
+	font-family: Calibri light;
+    background: black;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+	cursor:pointer;
+	
+}
+
+
+.tablita .btn btn-light{
+	text-align: justify;
+	font-size: 40px;
+}
+footer {
+	margin-top: 20px;
+
+	width:100%;
+	float:left;
+	clear:both;
+	box-shadow:0px 2px 2px #000;
+	-moz-box-shadow:0px 2px 2px #000;
+	-webkit-box-shadow:0px 2px 2px #000;
+	border-radius:5px;
+	-moz-border-radius:5px;	
+	-webkit-border-radius:5px;
+	background: #fff;		
+	
+}
+ 
+footer section {
+	width:600px;
+	float:left;
+	padding:20px;
+}
+ 
+footer #acerca-de {
+	font-family:Calibri;
+	font-size:18px;
+	color:black;
+	text-align:left;
+	line-height:20px;
+}
+ 
+footer #acerca-de h3 {
+	font-family:Calibri light;
+	font-size:20px;
+	color: #0f778a;
+	margin-bottom:5px;
+}
+ 
+footer #redes-s > div {
+	width:128px;
+	height:128px;
+	float:right;
+	background:#ff8000;
+	opacity:0.5;
+}
+ 
+footer #redes-s > div a {
+	display:inline-block;
+}
+ 
+footer #redes-s .email {
+	background:url(email.png);
+}
+ 
+footer #redes-s .twitter {
+	background:url(twitter.png);
+	
+}
+ 
+footer #redes-s .facebook {
+	background:url(facebook.png);
+}
+ 
+footer #redes-s .youtube {
+	background:url(youtube.png);
+}
+ 
+footer #redes-s > div:hover {
+	opacity:1;
+}
